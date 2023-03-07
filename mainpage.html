@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<style>
+		html {
+			height: 100%;
+		}
+
+		body {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		.container {
+			flex-grow: 1;
+		}
+    body {
+  background-image: url('background.jpg');
+  /* background-image: url('image.jpg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.header-content {
+  text-align: center;
+  color: #fff;
+  margin-top: 200px;
+}
+h1 {
+  font-size: 60px;
+  margin: 0;
+}
+h2 {
+  font-size: 36px;
+  margin: 0;
+}
+nav {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+nav a:hover {
+  background-color: #333;
+  color: #fff;
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header-content">
+			<h1>Venkateswarlu Tanneru</h1>
+			<h2>Software Engineer</h2>
+		</div>
+		<nav>
+			<a href="about.html">About</a>
+			<a href="experience.html">Experience</a>
+			<a href="projects.html">Projects</a>
+			<a href="education.html">Education</a>
+			<a href="skills.html">Skills</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+	</div>
+	<footer style="color: white">
+    <p>&copy; 2023 Venkateswarlu Tanneru. All rights reserved.</p>
+  </footer>
+</body>
+</html>

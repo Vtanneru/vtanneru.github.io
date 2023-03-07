@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Experience</title>
+        <style type="text/css">
+            html {
+                height: 100%;
+            }
+            body {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            body {
+            background-image: url('background.jpg');
+            /* background-image: url('image.jpg'); */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            }
+            .container {
+            margin: 0 auto;
+            max-width: 960px;
+            padding: 0 20px;
+            box-sizing: border-box;
+            }
+            .header-content {
+            text-align: center;
+            color: #fff;
+            margin-top: 200px;
+            }
+            h1 {
+            font-size: 40px;
+            margin: 0;
+            }
+            main{
+            margin-left: 20%;
+            }
+            h2 {
+            font-size: 25px;
+            margin: 0;
+            }
+            .container {
+                flex-grow: 1;
+            }
+            header nav a {
+              color: aliceblue;
+              text-decoration: none;
+              font-size: 15px;
+            }
+            .job-title {
+                font-weight: bold;
+            }
+            .company {
+                font-style: italic;
+            }
+            .job-details {
+                margin-bottom: 20px;
+                padding-left: 20px;
+            }
+            .hide {
+                display: none;
+            }
+            .view-details {
+                text-decoration: underline;
+                cursor: pointer;
+                color: blue;
+            }
+            </style>
+        </style>
+        <script type="text/javascript">
+            function toggleDetails(element) {
+                var jobDetails = element.parentNode.querySelector('.job-details');
+                var allJobDetails = document.querySelectorAll('.job-details');
+                
+                // hide all job details except the clicked one
+                for (var i = 0; i < allJobDetails.length; i++) {
+                    if (allJobDetails[i] !== jobDetails) {
+                    allJobDetails[i].classList.add('hide');
+                    }
+                }
+
+                // toggle the clicked job details
+                jobDetails.classList.toggle('hide');
+            }
+        </script>
+    </head>
+    <body style="color: white;">
+        <header style="display: flex; color: white; justify-content: flex-start; align-items: center;">
+            <nav>
+              <a href="mainpage.html" class="home-button">&larr; Home</a>
+            </nav>
+        </header>
+        <main>
+            <h1>Experience</h1>
+            <div class="job">
+                <h2 class="job-title">Graduate Assistant</h2>
+                <div class="company">University of Florida</div>
+                <div class="job-dates">Jan 2022 - Feb 2023</div>
+                <details><summary>Work Experience:</summary>
+                    <!-- <div class="job-details hide"> -->
+                        <p style="color: beige;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Developed an Autodesk Revit plugin that automates the evaluation of 3D models for compliance with IRC Building rules, significantly reducing approval time. The plugin includes a C# WPF application that utilizes Material Design and Syncfusion UI components, improving usability and engagement with the BIM Modeller. I possess expertise in C#, .NET, logging, and caching, as well as experience in developing WPF/WinForm applications, utilizing MVVM, Syncfusion, Two-way Binding, Threading, and Installer applications solutions in Visual Studio, Successfully migrated databases to Azure using Cloud and Container Services, ensuring data integrity and minimal downtime. Optimized and managed Azure services, VMs, and AzureAD, improving overall system performance and reducing costs. Implemented secure Auth0 authentication with JWT for various applications, ensuring efficient access management. Deployed streamlined CI/CD systems using various tools such as Azure DevOps, Jenkins and Kubernetes. Utilized ETL processes for seamless data integration across systems. Ensured business continuity with an established disaster recovery plan using Azure Site Recovery and Backup services.</p>
+                    <!-- </div>  -->
+                </details>
+                <!-- <a class="view-details" onclick="toggleDetails(this)">View Details</a> -->
+            </div>
+
+            <div class="job">
+                <h2 class="job-title">Software Engineer Intern</h2>
+                <div class="company">Virtual Review Assist, USA</div>
+                <div class="job-dates">May 2022 - Aug 2022</div>
+                <details><summary>Work Experience:</summary>
+                    <!-- <div class="job-details hide"> -->
+                        <p style="color: beige;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Developed a full-stack web application using Golang and ReactJS, providing a user-friendly interface and fast performance. Leveraged Golang’s strong typing, concurrency, and scalability features to build a robust backend that handles large amounts of data and traffic. Utilized ReactJS’s component-based architecture and virtual DOM to create a responsive and dynamic front-end that delivers a seamless user experience. Designed and implemented RESTful APIs using Django REST framework, enabling seamless communication with client-side applications. Utilized Django’s built-in authentication and authorization system to secure sensitive data and provide controlled access to resources. Utilized Git for version control and collaborated with a team of developers to ensure efficient development and deployment using agile methodologies.</p>
+                    <!-- </div> -->
+                </details>
+                <!-- <a class="view-details" onclick="toggleDetails(this)">View Details</a> -->
+            </div>
+
+            <div class="job">
+                <h2 class="job-title">Software Engineer</h2>
+                <div class="company">OCT Infotech Pvt Ltd, India</div>
+                <div class="job-dates">Jun 2020 - Jul 2021</div>
+                <details><summary>Work Experience:</summary>
+                    <!-- <div class="job-details hide"> -->
+                        <P style="color: beige;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As a member of the core Architecture team, developed and maintained the core C++ (MFC) framework for software product while collaborating with other team members to ensure efficient development of tools and buttons. Led the successful migration of the UI framework from legacy MFC to Qt Framework, resulting in improved user experience and product efficiency. Successfully implemented generic features to support high-level modules and performed proof of concept to build a hybrid desktop and web application using Qt Web engine, OpenGL, and web technologies. Proficient in Python and Bash scripting, with experience in automating tasks such as infrastructure provisioning, testing, and deployment pipelines. Experienced in testing processes such as regression, integration, and unit testing, with an understanding of their importance in ensuring software quality. Strong knowledge of C++ project/build tooling (CMake, CTest) and the ability to read C++ code and assist developers with C++ related challenges.</p>
+                    <!-- </div> -->
+                </details>
+                <!-- <a class="view-details" onclick="toggleDetails(this)">View Details</a> -->
+            </div>
+        </main>
+
+        <footer>
+        <p>&copy; 2023 Venkateswarlu Tanneru. All rights reserved.</p>
+        </footer>
+  </body>
+</html>
